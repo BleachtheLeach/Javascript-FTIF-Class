@@ -173,7 +173,7 @@ if (money) {
 }
 
 
-*/
+
 
 
 
@@ -191,19 +191,90 @@ if (money) {
 // https://www.youtube.com/watch?v=KKfZ2OtKp3k&list=PLGGPU5_f-5iLTSZYDe1UYCNUBoL4Yx_Gr&index=23
 
 
+const scoreAverageDolphins = (96 + 108 + 89) / 3;
+const scoreAverageKoalas = (88 + 91 + 110) / 3;
+
+
+if (scoreAverageDolphins > scoreAverageKoalas) {
+    console.log(`Dolphins are the winner!`)
+} else if (scoreAverageKoalas > scoreAverageDolphins) {
+    console.log('Koalas are the winner!')
+} else if (scoreAverageDolphins === scoreAverageKoalas) {
+    console.log(`There is a tie.`)
+}
+
+// Bonus
+
+
+const scoreAverageDolphins = (97 + 112 + 101) / 3;
+const scoreAverageKoalas = (109 + 95 + 123) / 3;
+
+if (scoreAverageDolphins > scoreAverageKoalas && scoreAverageDolphins >= 100) {
+    console.log(`Dolphins are the winner!`)
+} else if (scoreAverageKoalas > scoreAverageDolphins && scoreAverageKoalas >= 100) {
+    console.log('Koalas are the winner!')
+} else if (scoreAverageDolphins === scoreAverageKoalas && scoreAverageDolphins >= 100 && scoreAverageKoalas >= 100) {
+    console.log(`There is a draw.`)
+} else {
+    console.log(`There is no winner.`)
+}
 
 
 
+let day = 'monday';
+
+switch (day) {
+    case 'monday':
+        console.log(`Go to work`);
+        console.log(`Learn more coding`)
+        break;
+    case 'tuesday':
+        console.log('tuesday stuff');
+        break;
+    case 'wednesday':
+    case 'thursday':
+        console.log(`play fetch with the cats`)
+        break;
+    case `friday`:
+        console.log(`get ready for the weekend`)
+        break;
+    case `saturday`:
+    case `sunday`:
+        console.log(`Jack shit, its the weekend!`)
+    default:
+        console.log(`N/A`)};
 
 
 
+let day = 'sunday';
+
+if (day === 'monday') {
+    console.log(`Monday`)
+} else if (day === `tuesday`) {
+    console.log(`Tuesday`)
+} else if (day === `wednesday` || day === 'thursday') {
+    console.log(`Wednesday or Thursday`)
+} else if (day === 'friday') {
+    console.log(`Friday`)
+} else if (day === 'saturday ' || day === 'sunday') {
+    console.log(`Saturday or Sunday`)
+} else {
+    console.log('not a logical weekday. only input ones with lower case.')
+}
 
 
 
+let bill = 275;
+let tip, message;
+
+bill >= 300 ? (tip = bill * 0.2) : (tip = bill * 0.15)
+bill >= 300 ? (message = `The bill was $${bill}, the tip was $${tip} and the total was ${bill + tip}. `) : (message = `The bill was $${bill}, the tip was $${tip} and the total was ${bill + tip}. `)
+console.log(message)
 
 
+const bill = 430;
+const tip = bill <= 300 && bill >= 50 ? bill * 0.15 : bill * 0.2;
+console.log(`The bill was ${bill}, the tip was ${tip}, and the total value ${bill + tip}`);
 
-
-
-
+*/
 
