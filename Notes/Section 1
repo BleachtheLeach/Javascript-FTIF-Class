@@ -1,0 +1,134 @@
+Javascript Youtube Course
+https://www.youtube.com/playlist?list=PLGGPU5_f-5iLTSZYDe1UYCNUBoL4Yx_Gr
+
+
+
+    Control + Shift + J will open the console/dev tools on Google Chrome (It can be zoomed in to make text larger)
+
+In the console you can run javascript ie:
+
+    alert("Hello World!"); 
+
+Returns a pop up alert that says Hello World!
+
+You can also when in the new line field use the arrow button to go through the previous commands you've ran.
+
+**Javascript is a high-level object-oriented, multi-paradigm programming language**
+
+    High-level - We don't have to worry about complex stuff such as memory management
+
+    Object Oriented -  Based on objects for storing most kinds of data
+
+    Programming language - It instructs the computer to do something
+
+    Multi-Paradigm - We can use different styles of programming
+
+The 3 major technologies in web development are HTML, CSS, and Javascript
+
+    HTML - Content such as buttons (Nouns)
+    CSS - How everything looks (Adjectives)
+    Javascript - Programing language used to build web applications (verbs)
+
+Javascript can be ran inside (front end) and outside of a web browser (back end) 
+
+console.log(); is how you can log items to the development console
+
+Javascript can be ran inline or with an external javascript file. We use the external files to seperate javascript from the html + css.
+
+**Be sure when naming variables use camelCase**
+
+    camelCase - whenever i have multiple words in a variable name, I write the firstword with a lower case and each word after it with an uppercase without spaces. (example: aVeryAnnoyingExampleOfCamelCase)
+
+Variables cannot start with a number or a reserved keyword, and can only contain letters, numbers, underscores, or the dollar sign. They should always start with a lowercase. 
+
+Exceptions to this are constants (all uppercase variables that do not change) For instance:
+
+let PI - 3.1415;
+
+Syntax errors = something is not coded properly for javascript to understand
+
+**Variable names need to be specific. You should understand its use just by reading the name of the variable.**
+
+There are 7 primitive data types in Javascript:
+
+    Number - floating point numbers > Used for decimals and intergers
+
+    String - Sequence of characters > Used for text must be within '' or ""
+
+    Bullion - Logical type that can only be true or false > used for taking decisions
+
+    Undefined - Valute taken by a variable that is not yet defined ('empty value')
+
+    Null - Also means 'empty value' 
+
+    Symbol - Value that is unique and cannot be changed [not useful now]
+
+    Big int. - Larger intergers than the Number type can hold
+
+**Javascript has a feature called dynamic typing: We do not have to manually define the data type of the value stored in a variable. Instead, data types are determined automatically.**
+        ^ Value has type, NOT variable!
+
+Comments can be added 2 ways
+
+        // this line will be commented in js
+
+        /* 
+        This is a multiline comment
+        */
+
+There are 3 ways to declare a variables. 
+
+    var variableExample = 'Example';
+        ^avoid this. Mainly legacy.  
+
+    Let variableExample = 'Example';
+    variableExample = 'Example';
+
+    const variableExample = 'Example';
+        ^this way of declaring a variable cannot be changed later in the code. Must have an initial value.
+
+An operator allows us to transform values or combine multiple values.
+
+Different types of operators:
+
+        Mathmatic: - speaks for itself. Addition, subtractions, multiplication, division, etc.
+            + add
+            - subtract
+            * multiply
+            / divide
+            ** exponent
+            
+
+Results of a comparison operator should be a boolean.
+
+https://developer.mozilla.org/en-US/docs/Web/JavaScript/Reference/Operators/Operator_Precedence
+
+***With Template Literals we can write a string in a more normal way ***
+
+        Control Structure of an if else statement.
+                if(){
+
+                } 
+
+                else {
+                    
+                }
+
+
+
+In Javascript there is Type Conversion and Type Coercion. 
+
+    Type Conversion is when we manually convert fromone type to another.
+
+    Type Coercion is when Javascript automatically converts types behind the scenes for us.
+
+
+Falsy values are values that are not exactly false but will become false when we convert them into a boolean value. In Javascript there are only 6 falsy values; 0, '', undefined, null, and NaN (false itsels is false so we don't need to include it in the list of falsy values). All 5 of these values will be converted to false when we attempt to convert them to a boolean. They are not exactly false initially, but they will become when converted to a boolean.
+
+Everything else is are so-called truthy values. So, values that will be converted to true, for example, any number that is not zero or any string that is not an empty string will be converted to true when we attempt to convert them to a boolean.
+
+        && = and
+        || = or
+        ! = not // !a = not a or the opposite boolean of variable A
+
+        
